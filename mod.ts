@@ -16,7 +16,6 @@ export function modulo(n: number, m: number): number {
  * @param m is the number used for the modulo.
  * @returns the resulting quotient.
  */
-
 export function quotient(n: number, m: number): number {
   return Math.floor(n / m);
 }
