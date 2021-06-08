@@ -28,6 +28,6 @@ export function quotient(n: number, m: number): number {
  * @param m is the number used for the modulo.
  * @returns the resulting quotient and modulo as a pair (in that order).
  */
-export const decompose = (n: number, m: number): [number, number] => {
+export function decompose(n: number, m: number): [number, number] {
   return [quotient(n, m), modulo(n, m)];
-};
+}
