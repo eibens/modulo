@@ -26,7 +26,7 @@ n mod m = ((n % m) + m) % m
 
 The `modulo` function calculates _`p` = `n` mod `m`_:
 
-```tsj
+```ts
 import { modulo } from "./mod.ts";
 
 const n = -1;
