@@ -6,7 +6,7 @@
 
 ![Tag](https://img.shields.io/github/v/tag/eibens/modulo)
 ![License](https://img.shields.io/github/license/eibens/modulo)
-[![deno land](http://img.shields.io/badge/available%20on-deno.land/x-lightgrey.svg?logo=deno&labelColor=black)](https://deno.land/x/modulo)
+[![deno land](http://img.shields.io/badge/deno.land/x/-modulo-lightgrey.svg?logo=deno&labelColor=black)](https://deno.land/x/modulo)
 [![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/modulo/mod.ts)
 ![CI](https://github.com/eibens/modulo/workflows/ci/badge.svg)
 [![Code coverage](https://img.shields.io/codecov/c/github/eibens/modulo)](https://codecov.io/gh/eibens/modulo)
