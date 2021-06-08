@@ -42,7 +42,7 @@ import { modulo, quotient } from "./mod.ts";
 
 const n = 1;
 const m = 3;
-const q = quotient(1, 3);
+const q = quotient(n, m);
 const p = modulo(n, m);
 console.assert(q * m + p === n);
 ```
