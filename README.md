@@ -29,7 +29,7 @@ function, and the `decompose` function.
 
 ## [mod.ts]
 
-The `modulo` function calculates _`m` = `x` mod `n`_:
+The `modulo` function calculates `m = x mod n`:
 
 ```ts
 import { modulo } from "./mod.ts";
@@ -42,7 +42,7 @@ const test = m === 2;
 if (!test) throw new Error();
 ```
 
-The `quotient` function calculates _`q` = floor(`q` / `n`)_.
+The `quotient` function calculates `q = floor(q / n)`.
 
 ```ts
 import { modulo, quotient } from "./mod.ts";
@@ -55,8 +55,8 @@ const test = q === -1;
 if (!test) throw new Error();
 ```
 
-The `decompose` function calculates _(`q`, `m`)_. `q`, `m`, and `n` together
-define the original value `x` = `q` * `n` + `m`:
+The `decompose` function calculates `(q, m)`. `q`, `m`, and `n` together define
+the original value `x = q * n + m`:
 
 ```ts
 import { decompose } from "./mod.ts";
