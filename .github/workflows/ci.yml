@@ -10,19 +10,6 @@ jobs:
       - name: Deno setup
         uses: denoland/setup-deno@v1
 
-      - name: Deno lint
-        run: deno lint
-
-      - name: Deno format
-        run: deno fmt --check
-
-      - name: Deno test
-        run: deno test --coverage=.cov
-
-      - name: Deno coverage
-        run: deno coverage --unstable --lcov .cov > mod.lcov
-
-      - name: Upload coverage report
-        uses: codecov/codecov-action@v1
-        with:
-          files: mod.lcov
+      - name: Build
+        shell: bash
+        run: bash build.sh
