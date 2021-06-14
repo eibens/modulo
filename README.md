@@ -32,7 +32,7 @@ function, and the `decompose` function.
 The `modulo` function calculates `m = x mod n`:
 
 ```ts
-import { modulo } from "./mod.ts";
+import { modulo } from "https://deno.land/x/modulo/mod.ts";
 
 const x = -1;
 const n = 3;
@@ -45,7 +45,7 @@ if (!test) throw new Error();
 The `quotient` function calculates `q = floor(q / n)`.
 
 ```ts
-import { modulo, quotient } from "./mod.ts";
+import { modulo, quotient } from "https://deno.land/x/modulo/mod.ts";
 
 const x = -1;
 const n = 3;
@@ -59,7 +59,7 @@ The `decompose` function calculates `(q, m)`. `q`, `m`, and `n` together define
 the original value `x = q * n + m`:
 
 ```ts
-import { decompose } from "./mod.ts";
+import { decompose } from "https://deno.land/x/modulo/mod.ts";
 
 const x = -1;
 const n = 3;
