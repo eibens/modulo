@@ -1,32 +1,32 @@
 /**
- * Calculates the value of a number `n` modulo `m`.
+ * Calculates the modulo `x mod n`.
  *
- * @param n is the original number.
- * @param m is the number used for the modulo.
+ * @param x is the original number.
+ * @param n is the divider.
  * @returns the resulting modulo.
  */
-export function modulo(n: number, m: number): number {
-  return ((n % m) + m) % m;
+export function modulo(x: number, n: number): number {
+  return ((x % n) + n) % n;
 }
 
 /**
- * Calculates the quotient of a number `n` modulo `m`.
+ * Calculates the quotient `floor(x / n)`.
  *
- * @param n is the original number.
- * @param m is the number used for the modulo.
+ * @param x is the original number.
+ * @param n is the divider.
  * @returns the resulting quotient.
  */
-export function quotient(n: number, m: number): number {
-  return Math.floor(n / m);
+export function quotient(x: number, n: number): number {
+  return Math.floor(x / n);
 }
 
 /**
- * Decomposes a number `n` into its quotient and modulo.
+ * Calculates the quotient and modulo.
  *
- * @param n is the original number.
- * @param m is the number used for the modulo.
+ * @param x is the original number.
+ * @param n is the divider.
  * @returns the resulting quotient and modulo as a pair (in that order).
  */
-export function decompose(n: number, m: number): [number, number] {
-  return [quotient(n, m), modulo(n, m)];
+export function decompose(x: number, n: number): [number, number] {
+  return [quotient(x, n), modulo(x, n)];
 }
