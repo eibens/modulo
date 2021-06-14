@@ -42,7 +42,7 @@ const test = m === 2;
 if (!test) throw new Error();
 ```
 
-The `quotient` function calculates `q = floor(q / n)`.
+The `quotient` function calculates `q = floor(x / n)`.
 
 ```ts
 import { modulo, quotient } from "https://deno.land/x/modulo/mod.ts";
