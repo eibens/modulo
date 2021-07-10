@@ -3,12 +3,10 @@
 > [modulo] implements the mathematical [modulo operation] in TypeScript for
 > [Deno].
 
-[![deno.land mod](https://img.shields.io/badge/deno.land-modulo-lightgrey.svg?logo=deno)](https://deno.land/x/modulo)
-[![deno.land doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/modulo/mod.ts)
-![tag](https://img.shields.io/github/v/tag/eibens/modulo)
-![MIT license](https://img.shields.io/github/license/eibens/modulo)
-![CI](https://github.com/eibens/modulo/workflows/ci/badge.svg)
-[![Code coverage](https://img.shields.io/codecov/c/github/eibens/modulo)](https://codecov.io/gh/eibens/modulo)
+[![License][license-shield]](LICENSE) [![Deno doc][deno-doc-shield]][deno-doc]
+[![Deno module][deno-land-shield]][deno-land]
+[![Github tag][github-shield]][github] [![Build][build-shield]][build]
+[![Code coverage][coverage-shield]][coverage]
 
 # Motivation
 
@@ -21,13 +19,7 @@ module, or memorize this [modulo formula for JavaScript]:
 x mod n = ((x % n) + n) % n
 ```
 
-# Documentation
-
-[modulo] exposes a TypeScript API for [Deno]. It consists of the [mod.ts]
-module, which exports the `modulo` function, the complementary `quotient`
-function, and the `decompose` function.
-
-## [mod.ts]
+# [mod.ts]
 
 The `modulo` function calculates `m = x mod n`:
 
@@ -69,13 +61,19 @@ const test = x == q * n + m;
 if (!test) throw new Error();
 ```
 
-# That's it!
-
-- Repository: [eibens/modulo on GitHub]
-
 [modulo]: #
 [mod.ts]: mod.ts
 [Deno]: https://deno.land
 [modulo operation]: https://en.wikipedia.org/wiki/Modulo_operation
 [modulo formula for JavaScript]: https://web.archive.org/web/20090717035140if_/javascript.about.com/od/problemsolving/a/modulobug.htm
-[eibens/modulo on GitHub]: https://github.com/eibens/modulo
+[github]: https://github.com/eibens/modulo
+[github-shield]: https://img.shields.io/github/v/tag/eibens/modulo?label&logo=github
+[coverage-shield]: https://img.shields.io/codecov/c/github/eibens/modulo?logo=codecov&label
+[license-shield]: https://img.shields.io/github/license/eibens/modulo?color=informational
+[coverage]: https://codecov.io/gh/eibens/modulo
+[build]: https://github.com/eibens/modulo/actions/workflows/ci.yml
+[build-shield]: https://img.shields.io/github/workflow/status/eibens/modulo/ci?logo=github&label
+[deno-doc]: https://doc.deno.land/https/deno.land/x/modulo/mod.ts
+[deno-doc-shield]: https://img.shields.io/badge/doc-informational?logo=deno
+[deno-land]: https://deno.land/x/modulo
+[deno-land-shield]: https://img.shields.io/badge/x/modulo-informational?logo=deno&label
