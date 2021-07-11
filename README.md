@@ -36,7 +36,7 @@ console.assert(m === 2);
 The `quotient` function calculates `q = floor(x / n)`.
 
 ```ts
-import { modulo, quotient } from "https://deno.land/x/modulo/mod.ts";
+import { quotient } from "https://deno.land/x/modulo/mod.ts";
 
 const x = -1;
 const n = 3;
