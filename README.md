@@ -30,8 +30,7 @@ const x = -1;
 const n = 3;
 const m = modulo(x, n);
 
-const test = m === 2;
-if (!test) throw new Error();
+console.assert(m === 2);
 ```
 
 The `quotient` function calculates `q = floor(x / n)`.
@@ -43,8 +42,7 @@ const x = -1;
 const n = 3;
 const q = quotient(x, n);
 
-const test = q === -1;
-if (!test) throw new Error();
+console.assert(q === -1);
 ```
 
 The `decompose` function calculates `(q, m)`. `q`, `m`, and `n` together define
@@ -57,8 +55,7 @@ const x = -1;
 const n = 3;
 const [q, m] = decompose(x, n);
 
-const test = x == q * n + m;
-if (!test) throw new Error();
+console.assert(x == q * n + m);
 ```
 
 [modulo]: #
