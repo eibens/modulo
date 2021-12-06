@@ -1,12 +1,17 @@
-# [modulo]
+# modulo
 
-> [modulo] implements the mathematical [modulo operation] in TypeScript for
-> [Deno].
+[modulo](#) implements the mathematical [modulo operation] in TypeScript for
+[Deno](https://deno.land).
 
-[![License][license-shield]](LICENSE) [![Deno doc][deno-doc-shield]][deno-doc]
-[![Deno module][deno-land-shield]][deno-land]
-[![Github tag][github-shield]][github] [![Build][build-shield]][build]
-[![Code coverage][coverage-shield]][coverage]
+<!-- badges -->
+
+[![License](https://img.shields.io/github/license/eibens/modulo?color=informational)](LICENSE)
+[![deno.land/x](https://img.shields.io/badge/x/modulo-informational?logo=deno&label)](https://deno.land/x/modulo)
+[![Repository](https://img.shields.io/github/v/tag/eibens/modulo?label&logo=github)](https://github.com/eibens/modulo)
+[![ci](https://github.com/eibens/modulo/actions/workflows/ci.yml/badge.svg)](https://github.com/eibens/modulo/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/eibens/modulo/branch/master/graph/badge.svg?token=OV98O91EJ1)](https://codecov.io/gh/eibens/modulo)
+
+<!-- /badges -->
 
 # Motivation
 
@@ -19,7 +24,7 @@ module, or memorize this [modulo formula for JavaScript]:
 x mod n = ((x % n) + n) % n
 ```
 
-# [mod.ts]
+# Usage
 
 The `modulo` function calculates `m = x mod n`:
 
@@ -58,19 +63,5 @@ const [q, m] = decompose(x, n);
 console.assert(x == q * n + m);
 ```
 
-[modulo]: #
-[mod.ts]: mod.ts
-[Deno]: https://deno.land
 [modulo operation]: https://en.wikipedia.org/wiki/Modulo_operation
 [modulo formula for JavaScript]: https://web.archive.org/web/20090717035140if_/javascript.about.com/od/problemsolving/a/modulobug.htm
-[github]: https://github.com/eibens/modulo
-[github-shield]: https://img.shields.io/github/v/tag/eibens/modulo?label&logo=github
-[coverage-shield]: https://img.shields.io/codecov/c/github/eibens/modulo?logo=codecov&label
-[license-shield]: https://img.shields.io/github/license/eibens/modulo?color=informational
-[coverage]: https://codecov.io/gh/eibens/modulo
-[build]: https://github.com/eibens/modulo/actions/workflows/ci.yml
-[build-shield]: https://img.shields.io/github/workflow/status/eibens/modulo/ci?logo=github&label
-[deno-doc]: https://doc.deno.land/https/deno.land/x/modulo/mod.ts
-[deno-doc-shield]: https://img.shields.io/badge/doc-informational?logo=deno
-[deno-land]: https://deno.land/x/modulo
-[deno-land-shield]: https://img.shields.io/badge/x/modulo-informational?logo=deno&label
